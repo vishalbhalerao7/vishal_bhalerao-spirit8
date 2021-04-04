@@ -1,0 +1,1280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,700&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ################## utility classes ###########  */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.btn {
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* margin-left: 57rem; */
+    margin: 1rem auto;
+}
+.btn-primary {
+    color: #fff;
+    background: orange;
+    transition: background 0.3s ease-in;
+    border: 1px solid orange;
+  }
+  
+  .btn-primary:hover {
+    background: orangered;
+    /* border: 1px solid orangered; */
+  }
+
+/* ############ navbar ##########  */
+/* desktop mode  */
+.ham{
+    display: none;
+}
+.navbar {
+  box-shadow: 0px 5px 10px 0px rgb(77, 77, 77);
+  position: fixed;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  /* opacity: 0.85; */
+  z-index: 999;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+.navbar-menu {
+  /* order: 1; */
+  display: flex;
+  margin-right: 50px;
+}
+.navbar-menu li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.logo {
+  /* order: 2; */
+  font-size: 3rem;
+  margin-left: 50px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+/* ###### ##################### section ####################### */
+
+.showcase-area {
+  height: 150vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("./assets/01.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.919);
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.main-title {
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main-title .span {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: orange;
+}
+
+.showcase-container p {
+  color: gray;
+  font-size: 1.8rem;
+  text-align: center;
+}
+p strong {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+
+/* ############## about us ########## */
+#about {
+  padding: 50px 0px;
+  background: #f5f5f7;
+}
+
+#about .about-wrapper {
+  display: flex;
+}
+.about-text strong {
+  font-size: 3.2rem;
+  color: darkslategrey;
+}
+.about-p {
+  font-size: 3.2rem;
+  color: #666666;
+  font-weight: 200;
+}
+
+#about .small {
+  font-size: 1.8rem;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.line {
+  border-bottom: 2px solid orange;
+  width: 6rem;
+  height: 1.2rem;
+}
+.contain {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: #666666;
+  margin-bottom: 20px;
+  letter-spacing: 0.1rem;
+  line-height: 2.3rem;
+}
+.about-ul {
+  font-size: 1.6rem;
+  color: #666666;
+}
+.about-ul li {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.about-ul li span {
+  font-size: 1.6rem;
+  color: #666666;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.main-title{
+    animation: main-title-animation 1s ease-in-out forwards;
+    transform: translatex(150%)
+}
+@keyframes main-title-animation{
+    100%{
+        transform:translate(0%);
+    }
+}
+
+.showcase-container-content p{
+    animation: main-p-animation 1s ease-in-out forwards;
+    transform: translatex(-150%)
+}
+@keyframes main-p-animation{
+    100%{
+        transform:translate(0%);
+    }
+}
+
+
+/* ########### team #################  */
+
+.showcase-team {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("./assets/03.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.919);
+}
+.team-detailes {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 50px;
+}
+.team-title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.title-info {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.big-line {
+  border-bottom: 3px solid orange;
+  width: 6rem;
+  margin: 1rem auto;
+}
+.small-line {
+  border-bottom: 3px solid orange;
+  width: 4rem;
+  margin: 1rem auto;
+  opacity: 0.6;
+}
+.team-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.team-photos img {
+  /* display:block; */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.team .team-name {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 2.3rem;
+}
+.team-position {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.3rem;
+  font-weight: 200;
+}
+.team-info {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
+  font-weight: 200;
+  margin-right: 3rem;
+}
+
+/* ############## services #############  */
+.service-container {
+  background-color: #fff;
+}
+.service-info {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.services-info h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  /* justify-content: center; */
+  text-align: center;
+}
+.services-info h2 strong {
+  font-size: 3rem;
+  text-transform: uppercase;
+  /* font-weight: 200; */
+}
+.services-info .big-line {
+  border-bottom: 3px solid orange;
+  width: 6rem;
+  margin: 1rem auto;
+}
+.services-info .small-line {
+  border-bottom: 3px solid orange;
+  width: 4rem;
+  margin: 1rem auto;
+  opacity: 0.6;
+}
+.services-info p {
+  font-size: 1.6rem;
+  /* text-transform: uppercase; */
+  /* font-weight: 200; */
+  padding-left: 8rem;
+  padding-right: 8rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  font-weight: 200;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.service-photo {
+  position: relative;
+  margin-top: 2rem;
+}
+.service-photo::after {
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  border: 2px solid orange;
+  padding: 20px;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service {
+  text-align: center;
+}
+.service-detailes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.service-detailes .fa-5x {
+  font-size: 100em;
+}
+.service-name {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-top: 3rem;
+}
+
+.service-detailes p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  /* padding-top: 8px; */
+}
+/* ###################### client ##################  */
+.client-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("./assets/04.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.919);
+}
+
+.client-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  color: #fff;
+}
+.client-title strong {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.client-info .big-line {
+  border-bottom: 3px solid orange;
+  width: 6rem;
+  margin: 1rem auto;
+}
+.client-info .small-line {
+  border-bottom: 3px solid orange;
+  width: 4rem;
+  margin: 1rem auto;
+  opacity: 0.6;
+}
+
+.client {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: center;
+  cursor: pointer;
+}
+/* ############### service 2 ############  */
+
+.filter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.filter p {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.filter p strong{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.filter-option{
+    margin-left: 25rem;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 2.5rem;
+  margin: 3rem 0rem;
+}
+.img-grid img {
+  width: 230px;
+  height: 210px;
+}
+/* ############ testimonial ########## */
+.testimonial-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("./assets/05.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.919);
+}
+
+.testimonial-info h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  /* justify-content: center; */
+  text-align: center;
+  color: #fff;
+  margin-top: 55px;
+}
+.testimonial-info h2 strong {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.testimonial-info .big-line {
+  border-bottom: 3px solid orange;
+  width: 6rem;
+  margin: 1rem auto;
+}
+.testimonial-info .small-line {
+  border-bottom: 3px solid orange;
+  width: 4rem;
+  margin: 1rem auto;
+  opacity: 0.6;
+}
+.testimonial-info div p {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  font-weight: 200;
+  margin-top: 20px;
+  text-align: center;
+  padding: 5rem 20rem;
+}
+.testimonial-title h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 5rem;
+  font-weight: 200;
+}
+.testimonial-info h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  font-weight: 200;
+}
+
+/* ############### contact ############  */
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+}
+.contact-info h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  /* justify-content: center; */
+  text-align: center;
+  margin-top: 55px;
+}
+.contact-info h2 strong {
+  font-size: 3rem;
+  text-transform: uppercase;
+  /* font-weight: 200; */
+}
+.contact-info .big-line {
+  border-bottom: 3px solid orange;
+  width: 6rem;
+  margin: 1rem auto;
+}
+.contact-info .small-line {
+  border-bottom: 3px solid orange;
+  width: 4rem;
+  margin: 1rem auto;
+  opacity: 0.6;
+}
+
+.contact-info p {
+  font-size: 1.4rem;
+  /* text-transform: uppercase; */
+  /* font-weight: 200; */
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  font-weight: 200;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#form {
+  margin: 3rem auto;
+  text-align: center;
+  /* position: relative; */
+}
+
+#form h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-right: 62rem;
+  margin-bottom: 1rem;
+}
+.lable-one{
+     font-size: 1.6rem;
+     margin-left: 6rem;
+    
+}
+.lable-two{
+     font-size: 1.6rem;
+    margin-right: 30rem;
+}
+.lable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute; */
+}
+#email{
+    width: 320px;
+    height: 35px;
+    margin-right: 15px;
+}
+#password{
+    width: 320px;
+    height: 35px;
+    margin-left: 15px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  width: 680px;
+}
+
+
+/* ############### footer ##############  */
+.footer {
+  background-color: #000;
+}
+.footer-content {
+  display: flex;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer span {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  color: orange;
+}
+.footer h2 {
+  /* justify-content: space-evenly; */
+  font-size: 1rem;
+}
+.footer a i {
+  font-size: 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons a i:hover{
+    background-color: orange;
+}
+
+/* ############  media qurey ###########  */
+@media(max-width:768px){
+
+    .ham{
+        display: none;
+    }
+   body{
+       /* background-color: red; */
+       overflow-x: hidden;
+   }
+   /* ######### .showcase ############# */
+   .showcase-area {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./assets/01.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.919);
+}
+    /* ########## about #############  */
+    #about {
+        padding: 50px 0px;
+        background: #f5f5f7;
+      }
+      
+      #about .about-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #about .small {
+        font-size: 1.8rem;
+        color: #666666;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      .about-img{
+        margin: 0px auto;
+        width: 510px;
+    }
+      .about-img img{
+          margin: 0px auto;
+          width: 510px;
+      }
+     
+
+/* ######################### services ###################  */
+
+  .services-info p {
+    font-size: 1.4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.7rem;
+  }
+  
+  .service-photo::after {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    border: 2px solid orange;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .service-detailes .fa-5x {
+    font-size: 75em;
+  }
+  .service-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 3rem;
+  }
+  
+  .service-detailes p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.7rem;
+  }
+/* ############### service 2 ############  */
+
+
+.filter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.filter p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.filter p strong{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.filter-option{
+    margin-left: -5rem;
+}
+.img-grid {
+    display: grid;
+    grid-template-columns: auto auto  ;
+    grid-template-rows: auto auto ;
+    grid-gap: 2.5rem;
+    margin: 3rem 0rem;
+  }
+  .img-grid img {
+    width: 230px;
+    height: 210px;
+  }
+  /* ############## team ################## ? */
+  .showcase-team {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./assets/03.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.919);
+}
+  .team-info {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+    font-weight: 200;
+    margin-left: 2rem;
+  }
+   /* ################ client ############  */
+   .client-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 30vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./assets/04.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.919);
+}
+ .client img{
+     margin-right: 2rem;
+ }
+/* ############ .testimonial #############  */
+.testimonial-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 34vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./assets/05.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.919);
+}
+.testimonial-info{
+    margin-top: -7rem;
+}
+.testimonial-info div p {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+    padding: 5rem 10rem;
+}
+/* ############### contact ############  */
+.lable-one {
+    font-size: 1.6rem;
+    margin-left: 0rem;
+}
+.lable-two {
+    font-size: 1.6rem;
+    margin-right: 25rem;
+}
+}
+
+/* ################################# small screen ################## */
+@media (max-width:500px){
+    /* ####### utility class ############# */
+    body{
+      
+       overflow-x: hidden;
+    }
+    .container{
+        max-width: 400px;
+        width: 90%;
+        margin: auto;
+    }
+
+    html{
+        font-size: 50%;
+
+    }
+    /* ############ ham #################  */
+    .ham {
+        display: block;
+        position: fixed;
+        /* always keep ham on top of everything */
+        z-index: 1000;
+        top: 16px;
+        left: 7px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+        background-color: orange;
+        border-radius: 4px;
+        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+        background-size: 100%;
+    }
+    /* change ham image to close */
+    .showClose {
+        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+        background-color: orange;
+    }
+    .nav-items2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(63, 59, 59);
+        width: 100vw;
+        height: 55vh;
+        overflow: hidden;
+        /* color: white; */
+        /* hide the menu above the screen by default */
+        transform: translateX(-100%);
+        /* transition adds a little animation when sliding in and out the menu */
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+        opacity: 0.8;
+    }
+    .showNav {
+        /* show the menu */
+        transform: translateX(0);
+    }
+    /* basic nav styling below */
+    .nav-items2 ul {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column nowrap;
+        margin-bottom: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+/* ############# navbar ################# */
+.logo {
+    order: 1;
+    font-size: 3rem;
+    margin-left: auto;
+
+}
+
+.navbar {
+    box-shadow: 0px 5px 10px 0px rgb(77 77 77);
+    position: fixed;
+    width: 100vw;
+    background: #000;
+    color: #fff;
+    /* opacity: 0.85; */
+    z-index: 999;
+}
+
+
+    /* ############ showcase area #### */
+    
+.showcase-area {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+      url("./assets/01.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.919);
+  }
+
+  /* ######## about ########  */
+  .about-img {
+    margin: 0px auto;
+    width: 400px;
+}
+  .about-img img {
+    margin: 0px auto;
+    width: 390px;
+}
+
+
+  /* ############ client ###########  */
+
+  .client img{
+      width: 55px;
+  }
+/* ########## team ############  */
+.team-info {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+    font-weight: 200;
+    margin-left: 2rem;
+  }
+  .team-title {
+    /* margin-bottom: 1rem; */
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: -3rem;
+}
+
+
+.team-photos img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+  /* ############ service #######  */
+  .services-info h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+  .service-photo::after {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    border: 2px solid orange;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service-detailes .fa-5x {
+    font-size: 60em;
+}
+
+.service-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 3rem;
+    /* margin-right: 3rem; */
+}
+
+
+  /* ########### grid image ########  */
+
+  .filter{
+    display: none;
+}
+  .img-grid img {
+    width: 180px;
+    height: 200px;
+}
+/* ############ .testimonial #############  */
+.testimonial-container {
+    /* padding-top: 5rem; */
+    padding-bottom: 5rem;
+    height: 34vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./assets/05.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.919);
+}
+.testimonial-info h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    /* justify-content: center; */
+    text-align: center;
+    color: #fff;
+    margin-top: 5rem;
+}
+.testimonial-info{
+    margin-top: -7rem;
+}
+.testimonial-info div p {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0rem 10rem;
+}
+/* ############### contact ############  */
+.lable-one {
+    font-size: 1.6rem;
+    margin-left: 0rem;
+}
+.lable-two {
+    font-size: 1.6rem;
+    margin-right: 25rem;
+}
+
+
+  /* ################## forms ###########  */
+  textarea {
+    resize: none;
+    height: 100px;
+    width: 365px;
+}
+.lable-one {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+.lable-two {
+    font-size: 1.6rem;
+    margin-right: 15rem;
+}
+#email {
+    width: 40%;
+    height: 35px;
+    margin-right: 15px;
+}
+#password {
+    width: 40%;
+    height: 35px;
+    margin-left: 15px;
+}
+#form h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-right: 39rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background: orange;
+    transition: background 0.3s ease-in;
+    border: 1px solid orange;
+    margin-top: 1rem;
+}
+/* #################### footer ###########  */
+.footer-content {
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    height: 64px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+.footerh2{
+    padding-right: 1rem;
+    margin-left: -2rem;
+}
+
+.icons{
+    width: 200px;
+}
+
+}
